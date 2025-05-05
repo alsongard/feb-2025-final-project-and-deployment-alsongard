@@ -1,5 +1,3 @@
-import { IoLogoYoutube } from "react-icons/io";
-import { BsDiscord } from "react-icons/bs";
 export default function Contact()
 {
     return (

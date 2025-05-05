@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { latestData } from "../lib/latestNews";
 import LatestCategoryComponent from "./components/latestCategoryComponent";
 export default function Latest()

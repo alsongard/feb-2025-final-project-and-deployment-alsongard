@@ -1,10 +1,10 @@
-import Image from "next/image"
 import { teamData } from "../lib/team_data";
 import TeamComponent from "./components/team_components";
 import Link from "next/link";
 import {Montserrat } from "next/font/google";
 const montserrat = Montserrat({
-    weight: ['400', '500', '600', '700']
+    weight: ['400', '500', '600', '700'],
+    subsets: []
 })
 
 

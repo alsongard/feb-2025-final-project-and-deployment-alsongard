@@ -1,7 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 import {techInfoData} from "./lib/data";
 import TechInfoComponent from "./components/home_component";
+
+
+export const metadata = {
+  title: "TechSpace",
+  description: "Get News on Latest technology, science and  Research"
+} 
 export default function Home() {
 
 
