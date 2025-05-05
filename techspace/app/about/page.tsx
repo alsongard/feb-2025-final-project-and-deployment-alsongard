@@ -1,7 +1,13 @@
 import Image from "next/image"
 import { teamData } from "../lib/team_data";
-import TeamComponent from "../components/team_components";
+import TeamComponent from "./components/team_components";
 import Link from "next/link";
+import {Montserrat } from "next/font/google";
+const montserrat = Montserrat({
+    weight: ['400', '500', '600', '700']
+})
+
+
 export default function About()
 {
 
@@ -9,18 +15,18 @@ export default function About()
         return <TeamComponent key={dataItem.id} item={dataItem}/>
     })
     return (
-        <section>
+        <section className={`w-[100vw] `}>
             <h1 className="text-center text-[30px] my-[10px]">About Us</h1>
 
-            <div>
+            <div className={`${montserrat.className}`}>
                 <div className="w-[90%] mx-auto mb-[20px]">
-                    <p className='text-center'>Welcome to TechSpace, your gateway to the cutting edge of science and innovation. We are passionate explorers of the ever-evolving world of technology, where curiosity meets creation and imagination drives discovery. Our mission is simple: to bring you closer to the marvels shaping our future—from the far reaches of space to the smallest breakthroughs in atomic research.</p>
+                    <p className={`text-center  text-[20px]`}>Welcome to TechSpace, your gateway to the cutting edge of science and innovation. We are passionate explorers of the ever-evolving world of technology, where curiosity meets creation and imagination drives discovery. Our mission is simple: to bring you closer to the marvels shaping our future—from the far reaches of space to the smallest breakthroughs in atomic research.</p>
                 </div>
 
-                <div className='w-[80%] mx-auto'>
-                    <p className="text-left">At TechSpace, we dive deep into the realms of:</p>
-                    <ul className="list-disc w-[80%] mx-auto my-[20px]">
-                        <li>
+                <div className='w-[80%]  mx-auto'>
+                    <p className="text-left text-[19px]">At TechSpace, we dive deep into the realms of:</p>
+                    <ul className="list-disc w-[80%] text-[18px] mx-auto my-[20px]">
+                        <li className=''>
                         Space Exploration: <p> Discover missions beyond Earth, the engineering behind rockets, and the science driving humanity's pursuit of the stars.</p>
                         </li>
                         <li>
@@ -42,13 +48,13 @@ export default function About()
                         Scientific Research & Innovation: <p>Stay informed about breakthroughs across biology, chemistry, physics, and interdisciplinary fields that are changing the way we live and think.</p>
                         </li>
                     </ul>
-                    <div className="my-[20px]">
+                    <div className="my-[20px] text-[18px]">
                         <p>Whether you're a researcher, a student, a tech enthusiast, or just endlessly curious—this platform is built for you. Our goal is to break down complex topics into compelling, accessible stories without losing the depth that makes science truly fascinating.</p>
                         <p>At the heart of TechSpace is a love for knowledge, discovery, and the belief that science is for everyone—not just labs and lecture halls. Whether you're a researcher, student, engineer, dreamer, or just someone who loves a good rabbit hole, you're in the right place.Thanks for stopping by. Explore, question, and enjoy the journey with us.</p>
                     </div>
 
-                    <div className="w-[50%] mx-auto">
-                        <p className="text-center">Click the link below to view the latest on TechSpace</p>
+                    <div className="w-[50%]  mx-auto">
+                        <p className="text-center text-[18px]">Click the link below to view the latest on TechSpace</p>
                         <button className="latestNewsBtn mt-[5px] block mx-auto w-[150px]  py-[5px] bg-[#617bb4b7]"><Link href='/latest'> Latest</Link></button>
                     </div>
                 </div>
