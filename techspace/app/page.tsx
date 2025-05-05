@@ -23,7 +23,7 @@ export default function Home() {
       <section className="my-[20px] w-screen" id="techInfo">
         <h1 className="text-center text-[30px] my-[10px]">TECHSPACE</h1>
         <p className="text-center">Get the latest news from various tech companies, research and exploration </p>
-        <div className="tech-container w-full h-[420px] border-[2px] border-black my-[20px] flex flex-row gap-[50px] overflow-x-auto px-[50px] py-[20px] ">
+        <div className="tech-container w-full h-[420px] max-sm:h-[350px] border-[2px] border-black my-[20px] flex flex-row gap-[50px] overflow-x-auto px-[50px] py-[20px] ">
           {content}
         </div>
       </section>
@@ -31,8 +31,8 @@ export default function Home() {
       {/* <!-- get notification --> */}
       <section id="notification-company my-[50px] w-screen">
         <h1 className="text-center text-[30px] my-[10px]">Get In Touch</h1>
-        <div className="notification-container w-[90%] flex flex-row mx-auto justify-between px-[10px] py-[30px]">
-          <form className='w-[500px] p-[20px] shadow-[0_0_1px_black]' action="">
+        <div className="notification-container w-[90%] flex flex-row max-sm:flex-col max-sm:items-center max-sm:gap-y-[20px] mx-auto justify-between px-[10px] py-[30px]">
+          <form className='grow-[0.5] p-[20px] shadow-[0_0_1px_black]' action="">
             <label className='block w-full my-[5px]'>Enter your email to get notification</label>
             <input className='block w-full my-[10px] mb-[15px] shadow-[0_0_1px_black] p-[2.5px] rounded-sm' type="email" placeholder="Enter email" required />
             <input className="w-[30%] bg-green-300 rounded" type="submit" value="submit"/>

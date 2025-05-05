@@ -2,6 +2,9 @@
 @theme {
   --font-funnel: "Funnel Sans ", 'sans-serif';
   --font-about: "Montserrat", 'sans-serif';
+  --breakpoint-md:1001px;
+  --breakpoint-sm:861px;
+  --breakpoint-ssm:641px;
 }
 
 

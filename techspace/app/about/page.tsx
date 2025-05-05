@@ -64,7 +64,7 @@ export default function About()
             <div className="w-[90%] mx-auto mb-[20px]">
                 <h1 className='text-center text-[30px] my-[10px]'>The Team</h1>
                 <p className='text-center'> Meet the team responsible for the awesome and fantastic news</p>
-                <div className='flex flex-row gap-x-[52px] overflow-x-auto py-[30px] px-[40px] rounded-md border-blue-300 border-2'>
+                <div className='flex flex-row gap-x-[52px] max-ssm:gap-y-[40px] max-ssm:flex-col max-ssm:h-[300px] overflow-x-auto py-[30px] px-[40px] rounded-md border-blue-300 border-2'>
                     {team_content}
                 </div>
             </div>
@@ -74,7 +74,7 @@ export default function About()
                 <p className='text-center w-[65%] mx-auto'>To make contributions, enter your email our team will get in touch with you</p>
                 <form className=' relative w-[65%]  mx-auto '>
                     <input className='block rounded-md w-full py-[2.5px] px-[5px] border-[1.1px] border-white' placeholder='Enter email....'/>
-                    <input className='block rounded-md mt-[15px] bg-[#617bb4b7] hover:bg-[#617bb4]  py-[5px] mx-auto w-[300px]' type='submit' value='submit'/>
+                    <input className='block rounded-md mt-[15px] bg-[#617bb4b7] hover:bg-[#617bb4]  py-[5px] mx-auto w-[45%]' type='submit' value='submit'/>
                 </form>
             </div>
         </section>
