@@ -1,3 +1,10 @@
+import {Orbitron} from 'next/font/google'
+const orbitron = Orbitron(
+    { 
+        subsets: ['latin'],
+        weight: ['400', '500','600', '700']
+    }
+)
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -6,7 +13,7 @@ export default function Footer() {
     return (
         <footer className='bg-[#9c9c5b] px-[50px] py-[100px] flex flex-row justify-between items-center'>
             <div className="foot-name text-[30px]">
-                <h1>TECHSPACE</h1>
+                <h1 className={`${orbitron.className} text-[50px] font-[600]`}>TECHSPACE</h1>
             </div>
 
             <div className="foot-container flex flex-row justify-around items-center basis-1/2">
